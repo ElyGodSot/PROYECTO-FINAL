@@ -1,9 +1,10 @@
 main{
 
     display:grid;
-    grid-template-rows: .02fr .2fr .2fr .2fr 4fr;
-    background-image: url(https://th.bing.com/th/id/R.57250d06e37b2457bdf6104c072f10fb?rik=CSZN1vYe04EbaA&riu=http%3a%2f%2fwww.kebuena.com.mx%2fwp-content%2fuploads%2f2018%2f01%2fSahara-1.jpg&ehk=0O121hw6LHtXTkxJtMb%2f4wsWfwP4rllX0%2fJYnNzHBEE%3d&risl=&pid=ImgRaw&r=0);
+    grid-template-rows: .02fr .1fr .05fr 4fr;
+    background-image: url(https://th.bing.com/th/id/OIP.78Qvn9vOyh0jU2e9WyS5bAAAAA?rs=1&pid=ImgDetMain);
     background-size: 100%;
+
 }
 
 
@@ -19,9 +20,8 @@ header{
 .miniiconospadre{
     
     display: flex;
-    justify-content: flex-end;
-    margin: 20px;
-    order:2;
+    
+    order:3;
     
 
 }
@@ -29,37 +29,26 @@ header{
 
 .miniiconospadre img{
 
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 30px;
     
 }
 
 .paginareal{
 
-    margin:20px;
-
+    margin-top:30px;
+   
 }
 
-.paginareal img{
 
-    margin-left: 10px;
-    margin-right: 10px;
+.buscador INPUT{
 
-}
-
-form{
-
-    display: flex;
-    justify-content: center;
-
-}
-
-input{
-
-    width: 60%;
-    height: 45px;
-    margin-bottom: 20px;
-    font-size: x-large;
+    width: 900px;
+    height: 40PX;
+    font-size: xx-large;
+    margin-top: 20PX;
+    margin-bottom: 10px;
 }
 
 
@@ -68,19 +57,19 @@ input{
 .linkspadre{
 
     display: flex;
-    grid-row: 3/4;
+    grid-row: 2/3;
     justify-content: center;
-    margin-bottom: 40px;
+   
     
 
 }
 .links li{
     
     
-    width: 80px;
-    height: 80px;
-    padding: 0px 5px 15px 10px;
-    margin-left: 60px;
+    width: 50%;
+    height: 30%;
+    padding: 10px 5px 10px 10px;
+    margin-left: 50px;
     background-color: white;
     
     
@@ -88,19 +77,21 @@ input{
     
 
 }
-.botonespadre{
+nav{
     
-    grid-row: 4/5;
+    grid-row: 3/4;
     background-color: white;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
   
 }
 
 button{
 
     font-size: x-large;
-    margin-top: 20px;
+    margin-top: 1px;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
@@ -109,11 +100,12 @@ button{
 
 }
 
+
 div{
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
     background-color: white;
-    grid-row: 5/6;
+    grid-row: 4/5;
     display: flex;
     flex-wrap: wrap;
 
@@ -224,3 +216,236 @@ div{
     padding:20px;
 }
 
+@media (max-width:1300px){
+
+    main{
+
+        display:grid;
+        grid-template-rows: 150px 130px .05fr 4fr;
+        background-image: url(https://th.bing.com/th/id/OIP.78Qvn9vOyh0jU2e9WyS5bAAAAA?rs=1&pid=ImgDetMain);
+        background-size: 100%;
+    }
+    
+    
+    
+    header{
+
+        grid-row: 1/2;
+        display: grid;
+        grid-row: 100px 50px;
+        
+    }
+
+    
+    .miniiconospadre{
+       grid-row: 1/2;
+        
+        margin-left: 30px;
+        order:2;
+       
+    
+    }
+    
+    
+    .miniiconospadre img{
+        margin-top: 20px;
+    
+        margin-left: 10px;
+        margin-right: 10px;
+        
+    }
+    
+    .paginareal{
+        grid-row: 1/2;
+        
+        
+    
+    }
+    
+   
+
+    
+    .buscador{
+    grid-row: 2/3;
+
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+
+    }
+    
+    .buscador input{
+
+       width: 400px;
+       margin-left: 15%;
+        
+
+
+    }
+    
+    
+    
+    .linkspadre{
+    
+        display: flex;
+        grid-row: 2/3;
+        justify-content: center;
+       
+        
+    
+    }
+    .links li{
+        
+        
+        width: 50%;
+        height: 30%;
+        padding: 10px;
+        margin-left: 50px;
+        background-color: white;
+        
+        
+        
+        
+    
+    }
+    nav{
+        
+        grid-row: 3/4;
+        background-color: white;
+        margin-left: 20px;
+        margin-right: 20px;
+      
+    }
+    
+    button{
+    
+        font-size: small;
+        margin-top: 1px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 20px;
+        height: 30px;
+        
+        
+    
+    }
+
+    
+    div{
+        margin-left: 20px;
+        margin-right: 20px;
+        background-color: white;
+        grid-row: 4/5;
+        display: flex;
+        flex-wrap: wrap;
+    
+        
+        
+    }
+    
+    #carro{
+    
+        width:460px;
+        height: 700px;
+        background-image: url(https://th.bing.com/th/id/R.d0662db09b97588061e1923c04593068?rik=VmGsPN7iE6dvDg&riu=http%3a%2f%2f2.bp.blogspot.com%2f--PqkSdd6oFg%2fTsPlWsZQJxI%2fAAAAAAAAAAc%2fY7IdXUNoHuw%2fs1600%2fcollage17.jpg&ehk=%2bhFFlPISJl2ElbWzovFcspk5cg7k03lfOBiFZWCCBvk%3d&risl=&pid=ImgRaw&r=0);
+        background-size:contain;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        font-size: xx-large;
+        color: rgb(252, 63, 6);
+        flex-grow:20;
+        
+    }
+    
+    #playa{
+    
+        width:460px;
+        height: 700px;
+        background-image: url(https://www.fodors.com/wp-content/uploads/2021/05/UltimatePlayaDelCarmen__HERO_shutterstock_1161420211-1400x933.jpg);
+        background-size:cover;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        font-size: xx-large;
+        color: rgb(255, 255, 255);
+        text-align:end;
+        flex-grow: 1.2;
+        
+        
+    }
+    
+    #partido{
+        width:460px;
+        height: 700px;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        font-size: xx-large;
+        flex-grow: 1.2;
+        
+       
+    }
+    
+    
+    #musculo{
+    
+        width:460px;
+        height: 700px;
+        background-image: url(https://static.vecteezy.com/system/resources/previews/003/079/033/large_2x/young-fitness-woman-running-on-a-rural-road-sport-woman-running-free-photo.jpg);
+        background-size:950px 700px;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        font-size: x-large;
+        text-align:center;
+        flex-grow: 1.2;
+        
+       
+    }
+    
+    #arte{
+    
+        width:460px;
+        height: 700px;
+        background-image: url(https://th.bing.com/th/id/R.c313faaf731610ee639bc3b1a71f31d8?rik=5KEYy3Ff6mpuDA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2fbYcnJLT.jpg&ehk=2ZDSZWCr4Zp04zeWH6wFi4vLzxD%2f3K5%2fkXZ2hBq2Jlo%3d&risl=&pid=ImgRaw&r=0);
+        background-size:920px 700px;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        font-size: xx-large;
+        text-align:center;
+        color: aliceblue;
+        flex-grow: 50;
+    
+    }
+    .sugerenciaspadre{
+        width: 450px;
+        height: 700px;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+        font-size: x-large;
+        
+    
+    }
+    
+    .sugerencias{
+    
+        width:250px;
+        height:90px;
+        border: 2px solid black;
+        display:flex;
+        margin-bottom: 30px;
+        margin-left: 120px;
+    
+    }
+    
+    .sugerencias img{
+    
+        padding:20px;
+    }
+    
+}
